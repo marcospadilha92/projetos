@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Heroi } from 'C:/Users/marcos.padilha/Documents/projetos/angular-tour-herois/src/app/heroi';
 import { HEROIS } from '../herois-tontos';
+import { HeroiService } from '../heroi.service';
 
 @Component({
   selector: 'app-herois',
@@ -14,7 +15,7 @@ export class HeroisComponent implements OnInit {
    this.selectedHeroi = heroi;
  }
 
-  herois = HEROIS;
+  herois: Heroi[];
 
   constructor() { }
 
