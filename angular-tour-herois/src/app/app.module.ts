@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroisComponent } from './herois/herois.component';
 import { HeroiDetailComponent } from './heroi-detail/heroi-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroisComponent,
-    HeroiDetailComponent
+    HeroiDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
