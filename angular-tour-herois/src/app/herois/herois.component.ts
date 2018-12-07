@@ -17,12 +17,18 @@ export class HeroisComponent implements OnInit {
 
   herois: Heroi[];
 
-  constructor() { }
-
-  ngOnInit() {
+  getHerois(): void {
+    this.heroiService.getHerois()
+      .subscribe(herois => this.herois);
   }
 
+  constructor(private heroiService: HeroiService) { }
 
+  ngOnInit() {
+    this.getHerois;
+  }
+
+  
 
 
 
